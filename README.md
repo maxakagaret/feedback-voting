@@ -156,6 +156,12 @@ frontend/src/
   pages/             Login, Ideas, Roadmap, Votings, Voting
 ```
 
+## How this was built
+
+This is a portfolio project. Its architecture is based on production modules I designed and built single-handedly in a commercial SaaS platform. This repository is a clean-room reimplementation: no proprietary code, names or data.
+
+The implementation was written with AI assistance (Claude Code). I defined the requirements and architecture, made the design decisions and reviewed the result. I'm happy to walk through any part of it.
+
 ## Out of scope
 
 - Comments under ideas.
