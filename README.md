@@ -1,5 +1,7 @@
 # Feedback Voting
 
+[![CI](https://github.com/maxakagaret/feedback-voting/actions/workflows/ci.yml/badge.svg)](https://github.com/maxakagaret/feedback-voting/actions/workflows/ci.yml)
+
 A product-feedback module: users suggest improvements and upvote them, admins move ideas through a public roadmap and run votings ("what should we build next?"). Built with Laravel 12 + Sanctum and Vue 3 / Quasar.
 
 > All data is synthetic: users at `example.test`, generated ideas, votes and ballots. Demo logins: `admin@example.test` and `member@example.test`, password `password`.
