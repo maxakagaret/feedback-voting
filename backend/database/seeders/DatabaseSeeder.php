@@ -32,6 +32,18 @@ class DatabaseSeeder extends Seeder
         'Multi-currency support', 'Offline mode for the tablet', 'Import customers from CSV',
     ];
 
+    /** Plausible, generic motivations (English, no lorem ipsum) rotated across the ideas. */
+    private const DESCRIPTIONS = [
+        'We do this by hand every week and it takes most of a Monday morning.',
+        'Customers keep asking for it at the front desk; it would save a lot of back-and-forth.',
+        'Our team switched from a tool that had this, and it is the thing we miss most.',
+        'Would let us stop exporting data into spreadsheets just to answer simple questions.',
+        'Small change, but it removes a frequent source of mistakes during busy hours.',
+        'Needed for our second location, where staff work on shared tablets.',
+        'Several regulars mentioned it in feedback this month.',
+        'Would make onboarding new staff much faster.',
+    ];
+
     public function run(IdeaService $ideas, BallotService $ballots): void
     {
         fake()->seed(2026);
@@ -45,7 +57,7 @@ class DatabaseSeeder extends Seeder
             $idea = Idea::create([
                 'author_id' => $users->random()->id,
                 'title' => $title,
-                'description' => fake()->sentence(14),
+                'description' => self::DESCRIPTIONS[$i % count(self::DESCRIPTIONS)],
                 'status' => IdeaStatus::New,
                 'created_at' => CarbonImmutable::now()->subDays(120 - $i * 3),
             ]);
