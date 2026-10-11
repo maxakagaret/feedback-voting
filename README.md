@@ -6,6 +6,20 @@ A product-feedback module: users suggest improvements and upvote them, admins mo
 
 > All data is synthetic: users at `example.test`, generated ideas, votes and ballots. Demo logins: `admin@example.test` and `member@example.test`, password `password`.
 
+## Screenshots
+
+![ideas](docs/ideas.png)
+
+*Ideas board sorted by votes, with lifecycle statuses.*
+
+![roadmap](docs/roadmap.png)
+
+*Public roadmap; admins reorder cards inside a column.*
+
+![voting](docs/voting.png)
+
+*A voting with up to two choices; results are shown after you vote.*
+
 ## What it demonstrates
 
 | Topic | How |
